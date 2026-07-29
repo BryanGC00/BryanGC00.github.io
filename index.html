@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filosos Barber Shop | Estilo libre</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/PrimerProto.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo-link">
+            <img src="img/WhatsApp Image 2026-04-20 at 7.24.23 PM.jpeg" alt="Logo Filosos Barber Shop" class="logo-img">
+        </a>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#cortes">Cortes</a>
+            <a href="#contacto">Ubicación</a>
+        </nav>
+    </header>
+
+    <section class="carousel-container" id="inicio">
+        
+        <div class="carousel-arrow arrow-left" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></div>
+        <div class="carousel-arrow arrow-right" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></div>
+        
+        <div class="carousel-track">
+            
+            <div class="carousel-slide slide-1">
+                <div class="slide-tag">
+                    <span>Desde cortes de cabello</span>
+                    <h2>FILOSOS BARBER</h2>
+                </div>
+            </div>
+
+            <div class="carousel-slide slide-2">
+                <div class="slide-tag">
+                    <span>Perfilado de barba y bigote</span>
+                    <h2>SKIN FADE URBANO</h2>
+                </div>
+            </div>
+
+            <div class="carousel-slide slide-3">
+                <div class="slide-tag">
+                    <span>Hasta cuidado de la barba y cabello</span>
+                    <h2>PERFILADO A NAVAJA</h2>
+                </div>
+            </div>
+
+            <div class="carousel-slide slide-4">
+                <div class="slide-tag">
+                    <span>04 / SIN LÍMITES</span>
+                    <h2>DISEÑO FREESTYLE</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-dots">
+            <div class="dot active" onclick="currentSlide(0)"></div>
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+        </div>
+    </section>
+
+    <div class="cta-barber">
+        <p>¿Listo para cambiar de nivel? <strong>Cortes de alta calidad en Apodaca.</strong></p>
+        <a href="https://wa.me/528144266624?text=Hola%20Me%20Interesa%20agendar%20una%20cita%20en%20Filosos%20Barber." target="_blank" class="btn btn-gold">
+            <i class="fab fa-whatsapp"></i> Agendar Cita
+        </a>
+    </div>
+
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-scissors"></i>
+            <h3>Pura Precisión</h3>
+            <p>Contornos limpios y desvanecidos milimétricos. No dejamos detalles al azar.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-beer-mug-empty"></i>
+            <h3>Buen Ambiente</h3>
+            <p>Plática de barrio, buena música y respeto. Te sientas como en casa.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-chair"></i>
+            <h3>Atención VIP</h3>
+            <p>Productos de calidad premium para cuidar tu cabello y barba.</p>
+        </div>
+    </section>
+
+    <section class="servicios" id="cortes">
+        <h2 class="section-title">Cortes Disponibles</h2>
+        <p class="section-subtitle">Elige el tuyo y quédate con un estilo unico</p>
+        
+        <div class="grid-cortes">
+            
+            <div class="card-corte">
+                <div class="card-img-wrapper">
+                    <img src="img/C3.jpeg" alt="MULLET BABY">
+                </div>
+                <div class="card-info">
+                    <h3>MULLET BABY</h3>
+                    <p>La versión moderna y sutil de un clásico rebelde. Mantiene la esencia del mullet tradicional con los laterales cortos, pero con una transición más suave y una longitud más discreta en la nuca. Perfecto para quienes buscan un estilo urbano, atrevido y con mucha personalidad sin llegar a extremos.</p>
+                    <span class="precio">$120 MXN</span>
+                    <a href="https://wa.me/528144266624?text=Hola,%20quiero%20cita%20para%20un%20Mullet%20Baby." target="_blank" class="btn btn-outline-wa">
+                        <i class="fab fa-whatsapp"></i> Apartar Corte
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-corte">
+                <div class="card-img-wrapper">
+                    <img src="img/C6.jpeg" alt="TEXTURE CROP EVO">
+                </div>
+                <div class="card-info">
+                    <h3>TEXTURE CROP EVO</h3>
+                    <p>La evolución del estilo urbano. Destaca por un flequillo recto o corto combinado con un texturizado intenso en la parte superior que aporta volumen, movimiento y un aire muy fresco. Es el corte contemporáneo por excelencia para quienes buscan un 'look' desenfadado, fácil de peinar y con mucha textura.</p>
+                    <span class="precio">$220 MXN</span>
+                    <a href="https://wa.me/528144266624?text=Hola,%20quiero%20una%20cita%20para%20El%20Texture crop evo." target="_blank" class="btn btn-outline-wa">
+                        <i class="fab fa-whatsapp"></i> Apartar CORTE
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-corte">
+                <div class="card-img-wrapper">
+                    <img src="img/C12.jpeg" alt="LOW FADE">
+                </div>
+                <div class="card-info">
+                    <h3>LOW FADE</h3>
+                    <p>El rey de la versatilidad y la elegancia. Este desvanecido comienza desde muy abajo, justo por encima de la oreja y la nuca, logrando una transición impecable y limpia hacia la parte superior. Es el corte ideal para mantener un aspecto pulcro, sofisticado y de bajo mantenimiento.</p>
+                    <span class="precio">$150MXN</span>
+                    <a href="https://wa.me/528144266624?text=Hola,%20quiero%20cita%20para%20un%20Corte%20Low fade." target="_blank" class="btn btn-outline-wa">
+                        <i class="fab fa-whatsapp"></i> Apartar CORTE
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <h3>Filosos Barber Shop</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-right: 8px;"></i> Ciudad Apodaca, Nuevo León, México.</p>
+            <p><i class="fas fa-clock" style="color: var(--gold); margin-right: 8px;"></i> Todos los días — 10:00 AM a 9:00 PM</p>
+            
+            <a href="https://www.google.com/maps/place/Filosos+Barber+shop/@25.7939493,-100.2510656,679m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8662eddd6f7d7181:0x16895c76da64844b!8m2!3d25.7939493!4d-100.2484907!16s%2Fg%2F11gv09wnj_?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-maps">
+                <i class="fas fa-location-arrow"></i> ¿Cómo llegar? Ver Mapa
+
+            </a>
+    
+<div class="social-section">
+    <p class="social-title">Síguenos en redes</p>
+
+    <a href="https://www.facebook.com/profile.php?id=61569029187856"
+       target="_blank"
+       class="social-btn"
+       aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+</div>
+        </div>
+        
+        <div class="copyright">
+            © 2027 Filosos Barber Shop. 
+        </div>
+    </footer>
+
+    <script src="js/PrimerProto.js"></script>
+</body>
+</html>>
